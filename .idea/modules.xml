@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Node.JS_complete_bootcamp.iml" filepath="$PROJECT_DIR$/.idea/Node.JS_complete_bootcamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Node_Express_Mongo_backend/.idea/Node.JS_complete_bootcamp.iml" filepath="$PROJECT_DIR$/../Node_Express_Mongo_backend/.idea/Node.JS_complete_bootcamp.iml" />
     </modules>
   </component>
 </project>
