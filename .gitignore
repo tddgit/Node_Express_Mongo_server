@@ -1,3 +1,5 @@
 ./node_modules
-./4-natours kefgyv2Xiscukohbiv
+./4-natours
 ./config.env
+./.prettierrc
+./.eslintrc.json
