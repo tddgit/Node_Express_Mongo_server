@@ -15,7 +15,7 @@ const server = app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
 
-process.on('uncaughtException', (err) => {
+process.on('UncaughtException', (err) => {
   console.log(err.name, err.message);
   console.log('Uncaught Exception Shutting down...');
   server.close(() => {
@@ -38,9 +38,9 @@ mongoose
 //   console.log(`App listening on port ${port}`);
 // });
 
-process.on"unhandledRejection"', (err) => {
+process.on('UnhandledRejection', (err) => {
   console.log(err.name, err.message);
-  console.log"UNHANDLED REjection Shutting down..."');
+  console.log('UNHANDLED REjection Shutting down...');
   server.close(() => {
     process.exit(1);
   });
