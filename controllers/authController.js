@@ -51,9 +51,15 @@ exports.protect = catchAsync(async (req, res, next) => {
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
   ) {
-    const token = req.headers.authorization.split(' ')[1];
+    token = req.headers.authorization.split(' ')[1];
   }
   console.log('TOKEN IS:', token);
+
+  if (!token) {
+    return next(
+      new AppError('You are not logged in! Please log in to get access', 401)
+    );
+  }
   //2) Verification token
 
   //3) Chec if user still exists
